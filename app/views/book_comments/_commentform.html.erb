@@ -16,8 +16,10 @@
 <!-- コメント一覧 -->
 
 <!-- コメント投稿フォーム -->
-<%= form_for [book, book_comment] do |f| %>
-    <%= f.text_area :comment, class: "form-control", size: "10x5" %>
-    <%= f.submit "送信"%>
-<% end %>
+<div class="comment-form">
+  <%= form_for [book, @book_comment] do |f| %>
+    <%= f.text_area :comment, size: "90x5" %>
+    <%= f.submit '送信' %>
+  <% end %>
+</div>
 <!-- コメント投稿フォーム -->
